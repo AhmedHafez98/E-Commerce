@@ -33,7 +33,7 @@
         <div class="form-group">
             <label class="col-md-4 text-right">Enter Category Name</label>
             <div class="col-md-8">
-                <input type="text" name="first_name" value="#" class="form-control input-lg" />
+                <input type="text" name="first_name" value="Category1" class="form-control input-lg" />
             </div>
         </div>
         <br />

@@ -22,7 +22,7 @@
                 <a class="nav-link" href="#">Category</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Product</a>
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Product</a>
             </li>
         </ul>
     </div>
@@ -30,6 +30,21 @@
     <div class="container">
         <br />
         <h3 align="center">statistics</h3>
+        <table class="table table-bordered table-striped">
+            <tr>
+                <th width="10%">Finished products</th>
+                <th width="35%">most bought product</th>
+
+
+            </tr>
+            @for($i=0;$i<10;$i++)
+                <tr>
+                    <td>Product {{$i}}</td>
+                    <td>Product {{30-$i}}</td>
+
+                </tr>
+            @endfor
+        </table>
 
 </body>
 </html>

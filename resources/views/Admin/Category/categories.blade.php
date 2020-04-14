@@ -22,7 +22,7 @@
                 <a class="nav-link" href="#">Category</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Product</a>
+                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Product</a>
             </li>
         </ul>
     </div>
@@ -34,11 +34,14 @@
             <th width="10%">Image</th>
             <th width="35%">Category Name</th>
             <th width="30%">Number of products</th>
+            <th width="30%">Action</th>
+
         </tr>
         @for($i=0;$i<10;$i++)
             <tr>
                 <td><img src={{ asset ('category_image.png')}} class="img-thumbnail" width="75" /></td>
                 <td>Category {{$i}}</td>
+                <td>{{$i+5}}</td>
                 <td>
                     <form action="#" method="post">
                         <a href="#" class="btn btn-warning">Edit</a>
